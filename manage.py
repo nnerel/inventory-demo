@@ -63,7 +63,7 @@ def main():
         argv[1] == "delete-record"
         and argv[2]
         and argv[3]
-        ):
+    ):
         table_name = argv[2]
         _id = argv[3]
         db = Database(getenv("DB_FILE"))
@@ -75,7 +75,7 @@ def main():
         and argv[2]
         and argv[3]
         and len(argv) > 3
-        ): 
+    ): 
         table_name = argv[2]
         ids = []
         for i in range(3, len(argv)):

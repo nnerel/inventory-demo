@@ -11,7 +11,6 @@ class Database:
         self.con = sqlite3.connect(db_name)
         self.cur = self.con.cursor()
 
-
     def __repr__(self):
         return self.db_name
 
