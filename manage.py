@@ -91,14 +91,8 @@ def main():
         drc = db.row_counter(table_name)
         for all_rows in drc:
             for r in all_rows:
-                print(f"table {table_name!r} have {r} rows")
+                print(f"the number of rows in {table_name!r} table is {r}")
 
-        
-    if argv[1] == "dcc" and argv[2]:
-        table_name = argv[2]
-        db = Database(getenv("DB_FILE"))
-        dcc = len(db.col_counter(table_name))
-        print(f"the number of columns in {table_name!r} is {dcc}")
         
 if __name__ == "__main__":
     main()
