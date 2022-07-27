@@ -1,6 +1,6 @@
-python manage.py create-table X    - tworzy tabele o nazwie X
-python manage.py delete-table X    - usuwa tabele o nazwie X
-python manage.py insert_data X     - wprowadza dane do tabeli X
-python manage.py delete-record X   - usuwa pojedynczy rekord z tabeli X
-python manage.py --delete-record X - usuwa wiele rekordów z tabeli X
-python manage.py drc X             - wyświetla liczbę wszystkich wierszy z tabeli X
+python manage.py create-table X    - create table X
+python manage.py delete-table X    - delete table X
+python manage.py insert_data X     - insert data to table X
+python manage.py delete-record X   - delete single data record from table X
+python manage.py --delete-record X - delete multiple data records from table X
+python manage.py drc X             - display all rows from table X
