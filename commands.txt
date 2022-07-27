@@ -1,6 +1,7 @@
 python manage.py create-table X    - create table X
 python manage.py delete-table X    - delete table X
-python manage.py insert_data X     - insert data to table X
+python manage.py insert-data X     - insert data to table X
+python manage.py display-data X    - display data from table X
 python manage.py delete-record X   - delete single data record from table X
 python manage.py --delete-record X - delete multiple data records from table X
-python manage.py drc X             - display all rows from table X
+python manage.py drc X             - display number of rows from table X

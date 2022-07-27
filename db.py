@@ -56,3 +56,10 @@ class Database:
             FROM {table_name}
         """)
         return self.cur.fetchall()
+
+    def table_reader(self, table_name):
+        self.cur.execute(f"""
+            SELECT *
+            FROM {table_name}
+        """)
+        return self.cur.fetchall()

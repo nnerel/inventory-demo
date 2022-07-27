@@ -10,7 +10,8 @@ cur = con.cursor()
 cur.execute("""CREATE TABLE IF NOT EXISTS products(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT,
-        price INTEGER)
+        price INTEGER,
+        code CHARACTER)
     """)
 
 cur.execute(f"INSERT INTO products (name, price) VALUES ('book', 30)")

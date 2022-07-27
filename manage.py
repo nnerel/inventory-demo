@@ -43,7 +43,7 @@ def main():
     if argv[1] == "display-data" and argv[2]:
         table_name = argv[2]
         db = Database(getenv("DB_FILE"))
-        db_content = db.col_counter(table_name)
+        db_content = db.table_reader(table_name)
         for data in db_content:
             print(data)
 
